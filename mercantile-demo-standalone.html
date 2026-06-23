@@ -1,0 +1,2421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercantile Office Systems - EPSON | Acer</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Mercantile Office Systems - Authorized Dealer for EPSON Printers and Acer Laptops in Nepal.">
+    <meta name="keywords" content="EPSON, Acer, Printers, Laptops, Office Systems, Nepal">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mercantile Office Systems - EPSON | Acer">
+    <meta property="og:description" content="Authorized Dealer for EPSON Printers and Acer Laptops">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Main Styles -->
+    <style>
+/* ========================================== */
+/* MERCANTILE OFFICE SYSTEMS - MAIN STYLES    */
+/* EPSON | ACER - Static Mockup              */
+/* ========================================== */
+
+/* ---------- CSS Variables ---------- */
+:root {
+    --primary: #1a3a6b;
+    --primary-light: #2a5a8b;
+    --primary-dark: #0e1f3d;
+    --secondary: #d4a030;
+    --secondary-light: #e8c060;
+    --secondary-dark: #b88820;
+    --white: #ffffff;
+    --light: #f5f7fa;
+    --gray: #6c757d;
+    --dark: #1a1a2e;
+    --text-color: #2d2d3a;
+    --text-light: #6c7a8a;
+    
+    --epson-color: #000000;
+    --epson-accent: #d4a030;
+    --acer-color: #0066b3;
+    --acer-accent: #00a2e8;
+    
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'Playfair Display', serif;
+    
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow: 0 4px 24px rgba(0,0,0,0.06);
+    --shadow-hover: 0 8px 48px rgba(0,0,0,0.12);
+    --radius: 12px;
+    --radius-sm: 8px;
+}
+
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ---------- Typography ---------- */
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.section-tag::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background: var(--secondary);
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.section-title span {
+    color: var(--secondary);
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(212, 160, 48, 0.35);
+}
+
+.btn-outline-primary {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-outline-light:hover {
+    background: var(--white);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.btn-lg {
+    padding: 16px 40px;
+    font-size: 17px;
+}
+
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 13px;
+}
+
+/* ---------- Header ---------- */
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 24px rgba(0,0,0,0.04);
+    transition: var(--transition);
+}
+
+#main-header.scrolled {
+    box-shadow: 0 4px 40px rgba(0,0,0,0.08);
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    min-height: 72px;
+}
+
+.logo img {
+    height: 48px;
+    width: auto;
+}
+
+/* Navigation */
+.main-nav .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.main-nav .nav-list > li > a {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color);
+    padding: 8px 0;
+    position: relative;
+    letter-spacing: 0.3px;
+}
+
+.main-nav .nav-list > li > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    background: var(--secondary);
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+.main-nav .nav-list > li > a:hover::after,
+.main-nav .nav-list > li > a.active::after {
+    width: 100%;
+}
+
+.main-nav .nav-list > li > a:hover {
+    color: var(--primary);
+}
+
+/* Dropdown */
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: var(--white);
+    min-width: 220px;
+    padding: 8px 0;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-hover);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 14px;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.dropdown-menu li a:hover {
+    background: var(--light);
+    color: var(--primary);
+}
+
+/* Mobile Toggle */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 2.5px;
+    background: var(--primary);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ---------- Hero Slider ---------- */
+.hero-slider {
+    margin-top: 72px;
+    position: relative;
+    height: 80vh;
+    min-height: 480px;
+    max-height: 720px;
+    overflow: hidden;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slide-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(26, 58, 107, 0.85) 0%, rgba(26, 58, 107, 0.30) 100%);
+}
+
+.slide-content {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    max-width: 680px;
+    padding: 40px;
+    animation: slideUp 0.7s ease forwards;
+}
+
+.slide-content .slide-tag {
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: var(--secondary);
+    color: var(--primary-dark);
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.slide-content h1 {
+    font-family: var(--font-display);
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+.slide-content h1 span {
+    color: var(--secondary);
+}
+
+.slide-content p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 24px;
+    max-width: 480px;
+    line-height: 1.8;
+}
+
+.slide-content .btn-group {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Slider Controls */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.15);
+    color: var(--white);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 10;
+    font-size: 18px;
+}
+
+.slider-btn:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--primary-dark);
+}
+
+.slider-btn.prev { left: 24px; }
+.slider-btn.next { right: 24px; }
+
+.slider-dots {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.slider-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.slider-dots .dot.active {
+    background: var(--secondary);
+    border-color: var(--white);
+    transform: scale(1.25);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Brand Section ---------- */
+.brand-section {
+    background: var(--light);
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.brand-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 40px 36px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+
+.brand-card.epson::before {
+    background: var(--epson-color);
+}
+
+.brand-card.acer::before {
+    background: var(--acer-color);
+}
+
+.brand-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.brand-card .brand-logo {
+    height: 48px;
+    margin: 0 auto 16px;
+    object-fit: contain;
+}
+
+.brand-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.brand-card p {
+    color: var(--text-light);
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.brand-link {
+    font-weight: 600;
+    color: var(--secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+}
+
+.brand-link:hover {
+    color: var(--secondary-dark);
+    gap: 12px;
+}
+
+/* ---------- Products Section ---------- */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.product-card .product-image {
+    height: 200px;
+    overflow: hidden;
+    background: var(--light);
+    position: relative;
+}
+
+.product-card .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 16px;
+    transition: var(--transition);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.04);
+}
+
+.product-card .product-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 50px;
+    background: var(--secondary);
+    color: var(--primary-dark);
+}
+
+.product-card .product-body {
+    padding: 20px 24px 24px;
+}
+
+.product-card .product-brand {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary);
+    margin-bottom: 4px;
+}
+
+.product-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.product-card .product-specs {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.product-card .product-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 14px;
+}
+
+.product-card .product-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.product-card .product-link:hover {
+    color: var(--secondary);
+}
+
+/* ---------- About Section ---------- */
+.about-section {
+    background: var(--light);
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-content .section-title {
+    font-size: 36px;
+}
+
+.about-content p {
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.about-content p strong {
+    color: var(--primary);
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.about-features .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.about-features .feature i {
+    color: var(--secondary);
+    font-size: 18px;
+}
+
+.about-image {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-hover);
+}
+
+.about-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.about-image:hover img {
+    transform: scale(1.02);
+}
+
+/* ---------- News Section ---------- */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 28px;
+}
+
+.news-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.news-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.news-card .news-image {
+    height: 200px;
+    overflow: hidden;
+    background: var(--light);
+}
+
+.news-card .news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.news-card:hover .news-image img {
+    transform: scale(1.04);
+}
+
+.news-card .news-body {
+    padding: 20px 24px 24px;
+}
+
+.news-card .news-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.news-card .news-meta .category {
+    color: var(--secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.news-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.news-card p {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.news-card .read-more {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.news-card .read-more:hover {
+    color: var(--secondary);
+}
+
+/* ---------- CTA Section ---------- */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    padding: 56px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    right: -5%;
+    bottom: -40%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(212, 160, 48, 0.06);
+}
+
+.cta-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content h2 {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.cta-content p {
+    color: rgba(255,255,255,0.7);
+    font-size: 17px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* ---------- Footer ---------- */
+#main-footer {
+    background: var(--primary-dark);
+    color: rgba(255,255,255,0.8);
+    padding: 56px 0 28px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 36px;
+}
+
+.footer-col .footer-logo {
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+    margin-bottom: 14px;
+}
+
+.footer-col h4 {
+    color: var(--white);
+    font-size: 17px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background: var(--secondary);
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links li a {
+    font-size: 14px;
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.footer-links li a:hover {
+    opacity: 1;
+    color: var(--secondary);
+    padding-left: 4px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.social-links a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    color: var(--white);
+    font-size: 15px;
+}
+
+.social-links a:hover {
+    background: var(--secondary);
+    color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+.contact-info p {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.contact-info p i {
+    color: var(--secondary);
+    margin-top: 3px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 18px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+/* ---------- WhatsApp Widget ---------- */
+.whatsapp-widget {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 999;
+}
+
+.whatsapp-widget a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 50px;
+    box-shadow: 0 4px 28px rgba(37, 211, 102, 0.35);
+    transition: var(--transition);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.whatsapp-widget a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 40px rgba(37, 211, 102, 0.45);
+}
+
+.whatsapp-widget a i {
+    font-size: 28px;
+}
+
+/* ---------- Utilities ---------- */
+.text-center { text-align: center; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.flex { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.gap-10 { gap: 10px; }
+.gap-20 { gap: 20px; }
+</style>
+    <style>
+/* ========================================== */
+/* MERCANTILE OFFICE SYSTEMS - RESPONSIVE    */
+/* ========================================== */
+
+/* ---------- Tablets ---------- */
+@media (max-width: 1024px) {
+    .hero-slider {
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .slide-content h1 {
+        font-size: 40px;
+    }
+    
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-image img {
+        height: 280px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+    /* Header */
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 360px;
+        height: 100vh;
+        background: var(--white);
+        padding: 80px 32px 32px;
+        transition: var(--transition);
+        box-shadow: -4px 0 40px rgba(0,0,0,0.08);
+        overflow-y: auto;
+    }
+    
+    .main-nav.mobile-open {
+        right: 0;
+    }
+    
+    .main-nav .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+    }
+    
+    .main-nav .nav-list > li > a {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        padding-left: 16px;
+        border-left: 2px solid var(--secondary);
+        display: none;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        transform: none;
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+    
+    /* Hero */
+    .hero-slider {
+        height: 70vh;
+        min-height: 380px;
+        margin-top: 64px;
+    }
+    
+    .slide-content {
+        padding: 20px;
+    }
+    
+    .slide-content h1 {
+        font-size: 30px;
+    }
+    
+    .slide-content p {
+        font-size: 15px;
+    }
+    
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .slider-btn.prev { left: 12px; }
+    .slider-btn.next { right: 12px; }
+    
+    /* Brand Section */
+    .brand-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .brand-card {
+        padding: 28px 24px;
+    }
+    
+    /* Products */
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 16px;
+    }
+    
+    .product-card .product-image {
+        height: 150px;
+    }
+    
+    .product-card .product-body {
+        padding: 14px 16px 18px;
+    }
+    
+    .product-card h3 {
+        font-size: 15px;
+    }
+    
+    .product-card .product-price {
+        font-size: 17px;
+    }
+    
+    /* News */
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* About */
+    .about-features {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* CTA */
+    .cta-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cta-content h2 {
+        font-size: 24px;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    
+    /* Section Padding */
+    .section-padding {
+        padding: 48px 0;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+    
+    .section-subtitle {
+        font-size: 15px;
+    }
+    
+    /* WhatsApp */
+    .whatsapp-widget .whatsapp-label {
+        display: none;
+    }
+    
+    .whatsapp-widget a {
+        padding: 14px;
+        border-radius: 50%;
+    }
+    
+    .whatsapp-widget a i {
+        font-size: 32px;
+    }
+}
+
+/* ---------- Small Mobile ---------- */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero-slider {
+        height: 60vh;
+        min-height: 320px;
+    }
+    
+    .slide-content h1 {
+        font-size: 24px;
+    }
+    
+    .slide-content .slide-tag {
+        font-size: 11px;
+        padding: 4px 14px;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .product-card .product-image {
+        height: 120px;
+    }
+    
+    .product-card .product-body {
+        padding: 10px 12px 14px;
+    }
+    
+    .product-card h3 {
+        font-size: 13px;
+    }
+    
+    .product-card .product-specs {
+        font-size: 11px;
+    }
+    
+    .product-card .product-price {
+        font-size: 15px;
+    }
+    
+    .product-card .product-link {
+        font-size: 12px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .btn-lg {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+}
+</style>
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- HEADER -->
+    <!-- ========================================== -->
+    <header id="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20280%2056%22%20width%3D%22280%22%20height%3D%2256%22%3E%0A%20%20%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%229%22%20fill%3D%22%231a3a6b%22/%3E%0A%20%20%3Ctext%20x%3D%2222%22%20y%3D%2237%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%20fill%3D%22%23d4a030%22%20text-anchor%3D%22middle%22%3EM%3C/text%3E%0A%20%20%3Ctext%20x%3D%2254%22%20y%3D%2228%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2219%22%20font-weight%3D%22800%22%20fill%3D%22%231a3a6b%22%3EMercantile%3C/text%3E%0A%20%20%3Ctext%20x%3D%2254%22%20y%3D%2245%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2211%22%20font-weight%3D%22600%22%20fill%3D%22%236c7a8a%22%20letter-spacing%3D%221.5%22%3EOFFICE%20SYSTEMS%3C/text%3E%0A%3C/svg%3E%0A" alt="Mercantile Office Systems" id="site-logo">
+                    </a>
+                </div>
+                
+                <nav class="main-nav" id="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-page="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-page="products.html?category=Printer">EPSON Printers</a></li>
+                                <li><a href="#" data-page="products.html?category=Laptop">Acer Laptops</a></li>
+                                <li><a href="#" data-page="products.html?category=Accessory">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" data-page="about.html">About</a></li>
+                        <li><a href="#" data-page="gallery.html">Gallery</a></li>
+                        <li><a href="#" data-page="news.html">News</a></li>
+                        <li><a href="#" data-page="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="#" data-page="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fas fa-phone"></i> Get Quote
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobile-toggle">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================================== -->
+    <main>
+        <!-- Hero Slider -->
+        <section class="hero-slider" id="hero-slider">
+            <div class="slider-container">
+                <div class="slider-track" id="slider-track"></div>
+                
+                <button class="slider-btn prev" id="slider-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next" id="slider-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="slider-dots" id="slider-dots"></div>
+            </div>
+        </section>
+
+        <!-- Brand Showcase -->
+        <section class="brand-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Brands</span>
+                    <h2 class="section-title">Trusted <span>Partners</span></h2>
+                </div>
+                
+                <div class="brand-grid">
+                    <div class="brand-card epson">
+                        <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20280%2056%22%20width%3D%22280%22%20height%3D%2256%22%3E%0A%20%20%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%229%22%20fill%3D%22%231a3a6b%22/%3E%0A%20%20%3Ctext%20x%3D%2222%22%20y%3D%2237%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%20fill%3D%22%23d4a030%22%20text-anchor%3D%22middle%22%3EM%3C/text%3E%0A%20%20%3Ctext%20x%3D%2254%22%20y%3D%2228%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2219%22%20font-weight%3D%22800%22%20fill%3D%22%231a3a6b%22%3EMercantile%3C/text%3E%0A%20%20%3Ctext%20x%3D%2254%22%20y%3D%2245%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2211%22%20font-weight%3D%22600%22%20fill%3D%22%236c7a8a%22%20letter-spacing%3D%221.5%22%3EOFFICE%20SYSTEMS%3C/text%3E%0A%3C/svg%3E%0A" alt="EPSON" class="brand-logo">
+                        <h3>EPSON Printers</h3>
+                        <p>Premium quality printing solutions for home and office</p>
+                        <a href="#" data-page="products.html?category=Printer" class="brand-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="brand-card acer">
+                        <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20280%2056%22%20width%3D%22280%22%20height%3D%2256%22%3E%0A%20%20%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%229%22%20fill%3D%22%231a3a6b%22/%3E%0A%20%20%3Ctext%20x%3D%2222%22%20y%3D%2237%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%20fill%3D%22%23d4a030%22%20text-anchor%3D%22middle%22%3EM%3C/text%3E%0A%20%20%3Ctext%20x%3D%2254%22%20y%3D%2228%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2219%22%20font-weight%3D%22800%22%20fill%3D%22%231a3a6b%22%3EMercantile%3C/text%3E%0A%20%20%3Ctext%20x%3D%2254%22%20y%3D%2245%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2211%22%20font-weight%3D%22600%22%20fill%3D%22%236c7a8a%22%20letter-spacing%3D%221.5%22%3EOFFICE%20SYSTEMS%3C/text%3E%0A%3C/svg%3E%0A" alt="Acer" class="brand-logo">
+                        <h3>Acer Laptops</h3>
+                        <p>Powerful performance for work, study, and gaming</p>
+                        <a href="#" data-page="products.html?category=Laptop" class="brand-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Preview -->
+        <section class="products-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Featured Products</span>
+                    <h2 class="section-title">Best <span>Sellers</span></h2>
+                    <p class="section-subtitle">Discover our most popular EPSON printers and Acer laptops</p>
+                </div>
+                
+                <div class="products-grid" id="products-grid"></div>
+                
+                <div class="section-footer">
+                    <a href="#" data-page="products.html" class="btn btn-outline-primary">
+                        View All Products <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="about-section section-padding">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-content">
+                        <span class="section-tag">About Us</span>
+                        <h2 class="section-title">Mercantile Office <span>Systems</span></h2>
+                        <p>
+                            Since 1995, Mercantile Office Systems (P) Ltd. has been Nepal's trusted partner for 
+                            office technology solutions. As an authorized dealer for <strong>EPSON</strong> and 
+                            <strong>Acer</strong>, we deliver quality products backed by exceptional service.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Authorized Dealer</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>30+ Years Experience</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Genuine Products</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expert Support</span>
+                            </div>
+                        </div>
+                        <a href="#" data-page="about.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="./src/images/about-showroom.jpg" alt="Mercantile Showroom" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Preview -->
+        <section class="news-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Latest Updates</span>
+                    <h2 class="section-title">News & <span>Events</span></h2>
+                </div>
+                
+                <div class="news-grid" id="news-grid"></div>
+                
+                <div class="section-footer">
+                    <a href="#" data-page="news.html" class="btn btn-outline-primary">
+                        View All News <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="cta-content">
+                        <h2>Looking for the Perfect Office Solution?</h2>
+                        <p>Get expert advice and the best prices on EPSON printers and Acer laptops</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#" data-page="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg" id="whatsapp-cta">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- FOOTER -->
+    <!-- ========================================== -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20280%2056%22%20width%3D%22280%22%20height%3D%2256%22%3E%0A%20%20%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%229%22%20fill%3D%22%23d4a030%22/%3E%0A%20%20%3Ctext%20x%3D%2222%22%20y%3D%2237%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%20fill%3D%22%230e1f3d%22%20text-anchor%3D%22middle%22%3EM%3C/text%3E%0A%20%20%3Ctext%20x%3D%2254%22%20y%3D%2228%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2219%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EMercantile%3C/text%3E%0A%20%20%3Ctext%20x%3D%2254%22%20y%3D%2245%22%20font-family%3D%22Inter%2C%20sans-serif%22%20font-size%3D%2211%22%20font-weight%3D%22600%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.6%29%22%20letter-spacing%3D%221.5%22%3EOFFICE%20SYSTEMS%3C/text%3E%0A%3C/svg%3E%0A" alt="Mercantile" class="footer-logo">
+                    <p>Mercantile Office Systems (P) Ltd. — Your trusted partner for EPSON printers and Acer laptops in Nepal.</p>
+                    <div class="social-links" id="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="products.html">Products</a></li>
+                        <li><a href="#" data-page="about.html">About</a></li>
+                        <li><a href="#" data-page="gallery.html">Gallery</a></li>
+                        <li><a href="#" data-page="news.html">News</a></li>
+                        <li><a href="#" data-page="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="products.html?category=Printer">EPSON Printers</a></li>
+                        <li><a href="#" data-page="products.html?category=Laptop">Acer Laptops</a></li>
+                        <li><a href="#" data-page="products.html?category=Accessory">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <span id="footer-address">Kathmandu, Nepal</span></p>
+                        <p><i class="fas fa-phone"></i> <span id="footer-phone">+977-1-XXXXXXXX</span></p>
+                        <p><i class="fas fa-envelope"></i> <span id="footer-email">info@mercantile.com.np</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Mercantile Office Systems (P) Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- WHATSAPP WIDGET -->
+    <!-- ========================================== -->
+    <div class="whatsapp-widget">
+        <a href="#" id="whatsapp-link" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-label">Chat with us</span>
+        </a>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS -->
+    <!-- ========================================== -->
+    <script>
+// ===== mock-data =====
+// ==========================================
+// MOCK DATA - MERCANTILE OFFICE SYSTEMS
+// EPSON Printers | Acer Laptops
+// ==========================================
+const mockProducts = [
+    // ===== EPSON PRINTERS =====
+    {
+        id: 1,
+        name: 'EPSON EcoTank L3250',
+        brand: 'EPSON',
+        category: 'Printer',
+        price: 'NPR 42,500',
+        image: '/src/images/epson/ecotank-l3250.jpg',
+        description: 'All-in-one ink tank printer with Wi-Fi and high-yield ink bottles.',
+        specs: 'Wireless printing, Scan & Copy, High yield ink bottles',
+        features: ['Wireless printing', 'High yield ink bottles', 'Scan and copy', 'Compact design']
+    },
+    {
+        id: 2,
+        name: 'EPSON WorkForce Pro WF-4820',
+        brand: 'EPSON',
+        category: 'Printer',
+        price: 'NPR 68,000',
+        image: '/src/images/epson/workforce-wf4820.jpg',
+        description: 'Fast, reliable business printer with automatic duplex and large paper capacity.',
+        specs: 'Auto duplex printing, High-speed, Large paper capacity',
+        features: ['Auto duplex printing', 'High-speed printing', 'Large paper capacity', 'Business ready']
+    },
+    {
+        id: 3,
+        name: 'EPSON L8050 Photo Printer',
+        brand: 'EPSON',
+        category: 'Printer',
+        price: 'NPR 89,000',
+        image: '/src/images/epson/l8050.jpg',
+        description: 'Professional photo printer with 6-color system for stunning borderless prints.',
+        specs: '6-color ink, Borderless printing, High-resolution',
+        features: ['6-color ink', 'Borderless printing', 'High-resolution output', 'Professional quality']
+    },
+    {
+        id: 4,
+        name: 'EPSON L3110 Ink Tank',
+        brand: 'EPSON',
+        category: 'Printer',
+        price: 'NPR 28,500',
+        image: '/src/images/epson/l3110.jpg',
+        description: 'Budget-friendly ink tank printer with low cost per page and compact design.',
+        specs: 'Low cost per page, High yield ink, Compact',
+        features: ['Low cost per page', 'High yield ink', 'Compact design', 'Affordable']
+    },
+    {
+        id: 5,
+        name: 'EPSON ET-2850 EcoTank',
+        brand: 'EPSON',
+        category: 'Printer',
+        price: 'NPR 55,000',
+        image: '/src/images/epson/et-2850.jpg',
+        description: 'Wireless all-in-one with easy-to-fill ink tanks and auto 2-sided printing.',
+        specs: 'Auto 2-sided printing, Wireless, High capacity',
+        features: ['Auto 2-sided printing', 'Wireless connectivity', 'High capacity ink', 'Easy to fill']
+    },
+    {
+        id: 6,
+        name: 'EPSON SC-P700 Photo Printer',
+        brand: 'EPSON',
+        category: 'Printer',
+        price: 'NPR 125,000',
+        image: '/src/images/epson/sc-p700.jpg',
+        description: 'Professional wide-format photo printer with 10-color UltraChrome PRO ink.',
+        specs: '10-color ink, Wide format, Professional',
+        features: ['10-color UltraChrome PRO', 'Wide format printing', 'Professional grade', 'Gallery quality']
+    },
+
+    // ===== ACER LAPTOPS =====
+    {
+        id: 7,
+        name: 'Acer Aspire 5',
+        brand: 'Acer',
+        category: 'Laptop',
+        price: 'NPR 92,000',
+        image: '/src/images/acer/aspire-5.jpg',
+        description: '15.6" Full HD laptop with Intel Core i5, 8GB RAM, and 512GB SSD.',
+        specs: 'Intel Core i5, 8GB RAM, 512GB SSD, 15.6" FHD',
+        features: ['Intel Core i5', '8GB RAM', '512GB SSD', '15.6" FHD display']
+    },
+    {
+        id: 8,
+        name: 'Acer Predator Helios 300',
+        brand: 'Acer',
+        category: 'Laptop',
+        price: 'NPR 185,000',
+        image: '/src/images/acer/predator-helios-300.jpg',
+        description: 'Gaming laptop with Intel Core i7, RTX 4060 GPU, and 16GB RAM.',
+        specs: 'Intel Core i7, RTX 4060, 16GB RAM, 1TB SSD',
+        features: ['Intel Core i7', 'RTX 4060 GPU', '16GB RAM', '1TB SSD', 'Gaming optimized']
+    },
+    {
+        id: 9,
+        name: 'Acer Swift 3',
+        brand: 'Acer',
+        category: 'Laptop',
+        price: 'NPR 78,000',
+        image: '/src/images/acer/swift-3.jpg',
+        description: 'Lightweight ultrabook with AMD Ryzen 5, 8GB RAM, and 256GB SSD.',
+        specs: 'AMD Ryzen 5, 8GB RAM, 256GB SSD, 14" FHD',
+        features: ['AMD Ryzen 5', '8GB RAM', '256GB SSD', '14" FHD', 'Ultra-portable']
+    },
+    {
+        id: 10,
+        name: 'Acer ConceptD 7',
+        brand: 'Acer',
+        category: 'Laptop',
+        price: 'NPR 220,000',
+        image: '/src/images/acer/conceptd-7.jpg',
+        description: 'Workstation laptop for creators with 4K display, Intel Core i9, and RTX 3080.',
+        specs: '4K display, Intel Core i9, RTX 3080, 64GB RAM',
+        features: ['4K display', 'Intel Core i9', 'RTX 3080', '64GB RAM', 'Creator focused']
+    },
+    {
+        id: 11,
+        name: 'Acer Nitro 5',
+        brand: 'Acer',
+        category: 'Laptop',
+        price: 'NPR 135,000',
+        image: '/src/images/acer/nitro-5.jpg',
+        description: 'Gaming laptop with AMD Ryzen 7, RTX 3050, and 16GB RAM.',
+        specs: 'AMD Ryzen 7, RTX 3050, 16GB RAM, 512GB SSD',
+        features: ['AMD Ryzen 7', 'RTX 3050', '16GB RAM', '512GB SSD', 'Cooling system']
+    },
+    {
+        id: 12,
+        name: 'Acer TravelMate P2',
+        brand: 'Acer',
+        category: 'Laptop',
+        price: 'NPR 65,000',
+        image: '/src/images/acer/travelmate-p2.jpg',
+        description: 'Business laptop with Intel Core i5, 8GB RAM, and 256GB SSD, rugged design.',
+        specs: 'Intel Core i5, 8GB RAM, 256GB SSD, 14" FHD',
+        features: ['Intel Core i5', '8GB RAM', '256GB SSD', '14" FHD', 'Rugged design', 'Business ready']
+    }
+];
+const mockSliders = [
+    {
+        id: 1,
+        title: 'Premium',
+        subtitle: 'EPSON Printing Solutions',
+        description: 'High-quality printers for home and office — from EcoTank to WorkForce Pro',
+        image: '/src/images/sliders/epson-hero.jpg',
+        button_text: 'Explore EPSON',
+        button_url: '/src/pages/products.html?category=Printer'
+    },
+    {
+        id: 2,
+        title: 'Powerful',
+        subtitle: 'Acer Performance Laptops',
+        description: 'From gaming to business — find the perfect Acer laptop for your needs',
+        image: '/src/images/sliders/acer-hero.jpg',
+        button_text: 'Explore Acer',
+        button_url: '/src/pages/products.html?category=Laptop'
+    },
+    {
+        id: 3,
+        title: 'Trusted Since 1995',
+        subtitle: 'Mercantile Office Systems',
+        description: 'Your authorized dealer for EPSON printers and Acer laptops in Nepal',
+        image: '/src/images/sliders/mercantile-hero.jpg',
+        button_text: 'Contact Us',
+        button_url: '/src/pages/contact.html'
+    }
+];
+const mockNews = [
+    {
+        id: 1,
+        title: 'New EPSON EcoTank L3250 Now Available',
+        excerpt: 'The latest all-in-one printer with high-yield ink tanks is now in stock at Mercantile Office Systems.',
+        date: '2026-06-15',
+        category: 'New Product',
+        image: '/src/images/news/ecotank-launch.jpg'
+    },
+    {
+        id: 2,
+        title: 'Acer Predator Helios 300 Launch Event',
+        excerpt: 'Join us for the official launch of the Acer Predator Helios 300 with RTX 4060 GPU.',
+        date: '2026-06-10',
+        category: 'Event',
+        image: '/src/images/news/predator-launch.jpg'
+    },
+    {
+        id: 3,
+        title: 'Summer Tech Sale 2026',
+        excerpt: 'Get up to 20% off on selected EPSON printers and Acer laptops. Limited time offer!',
+        date: '2026-06-01',
+        category: 'Promotion',
+        image: '/src/images/news/summer-sale.jpg'
+    },
+    {
+        id: 4,
+        title: 'Mercantile Office Systems Turns 30',
+        excerpt: 'Celebrating 30 years of providing quality office technology solutions in Nepal.',
+        date: '2026-05-20',
+        category: 'Anniversary',
+        image: '/src/images/news/anniversary.jpg'
+    }
+];
+const mockTestimonials = [
+    {
+        id: 1,
+        name: 'Ram Sharma',
+        company: 'ABC Office Supplies',
+        review: 'Mercantile Office Systems provides the best EPSON printers in Nepal. Reliable service and competitive prices.',
+        rating: 5
+    },
+    {
+        id: 2,
+        name: 'Sita Gurung',
+        company: 'TechHub Nepal',
+        review: 'We bought Acer laptops for our entire team. Great performance and excellent after-sales support.',
+        rating: 5
+    },
+    {
+        id: 3,
+        name: 'Hari Poudel',
+        company: 'Nepal Tech Solutions',
+        review: 'Authorized dealer with genuine products. Trusted partner for over 10 years.',
+        rating: 4
+    }
+];
+const mockGallery = [
+    { id: 1, image: '/src/images/gallery/showroom.jpg', title: 'Our Showroom' },
+    { id: 2, image: '/src/images/gallery/epson-display.jpg', title: 'EPSON Display' },
+    { id: 3, image: '/src/images/gallery/acer-display.jpg', title: 'Acer Display' },
+    { id: 4, image: '/src/images/gallery/team.jpg', title: 'Our Team' },
+    { id: 5, image: '/src/images/gallery/service-center.jpg', title: 'Service Center' },
+    { id: 6, image: '/src/images/gallery/office.jpg', title: 'Mercantile Office' }
+];
+const mockSettings = {
+    site_name: 'Mercantile Office Systems (P) Ltd.',
+    phone: '+977-1-4523456',
+    email: 'info@mercantile.com.np',
+    address: 'Putalisadak, Kathmandu, Nepal',
+    whatsapp_number: '+977-9851234567',
+    facebook_url: 'https://facebook.com/mercantile',
+    youtube_url: 'https://youtube.com/mercantile',
+    instagram_url: 'https://instagram.com/mercantile',
+    linkedin_url: 'https://linkedin.com/company/mercantile'
+};
+// ===== placeholders =====
+// ==========================================
+// PLACEHOLDER IMAGE GENERATOR
+// Generates inline SVG data-URIs so the demo
+// looks clean even without real image files.
+// ==========================================
+
+function svgDataUri(svg) {
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+}
+
+// Generic product / news placeholder with a label
+function placeholder(label = 'Image', bg = '#eef2f7', fg = '#1a3a6b') {
+    const text = String(label).slice(0, 28);
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+        <rect width="600" height="400" fill="${bg}"/>
+        <text x="300" y="195" font-family="Inter,sans-serif" font-size="26" font-weight="700" fill="${fg}" text-anchor="middle">${text}</text>
+        <text x="300" y="228" font-family="Inter,sans-serif" font-size="13" fill="#9aa7b5" text-anchor="middle">Mercantile Office Systems</text>
+    </svg>`;
+    return svgDataUri(svg);
+}
+
+// Wide hero/slider placeholder
+function placeholderSlide(label = '') {
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800">
+        <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1a3a6b"/>
+                <stop offset="1" stop-color="#0e1f3d"/>
+            </linearGradient>
+        </defs>
+        <rect width="1600" height="800" fill="url(#g)"/>
+        <circle cx="1350" cy="650" r="320" fill="rgba(212,160,48,0.08)"/>
+        <text x="120" y="420" font-family="Inter,sans-serif" font-size="22" fill="rgba(255,255,255,0.25)">${label}</text>
+    </svg>`;
+    return svgDataUri(svg);
+}
+
+// Brand logo placeholders (text-based, no external files needed)
+function brandLogo(name) {
+    const colors = { EPSON: '#000000', Acer: '#0066b3' };
+    const color = colors[name] || '#1a3a6b';
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+        <text x="100" y="42" font-family="Inter,sans-serif" font-size="32" font-weight="900" fill="${color}" text-anchor="middle" letter-spacing="1">${name}</text>
+    </svg>`;
+    return svgDataUri(svg);
+}
+
+// Attach a global onerror fallback to any <img> that fails to load
+function attachImageFallbacks(root = document) {
+    root.querySelectorAll('img').forEach(img => {
+        if (img.dataset.fbBound) return;
+        img.dataset.fbBound = '1';
+        img.addEventListener('error', () => {
+            const label = img.alt || 'Image';
+            img.src = placeholder(label);
+        }, { once: true });
+    });
+}
+
+// ===== api =====
+// ==========================================
+// API CONFIGURATION - MERCANTILE OFFICE SYSTEMS
+// ==========================================
+
+// 🔄 SWITCH THIS TO 'false' WHEN CONNECTING TO SUPABASE
+const USE_MOCK_DATA = true;  // ← CHANGE TO false AFTER APPROVAL
+
+// ==========================================
+// IMPORT MOCK DATA
+// ==========================================
+
+// ==========================================
+// MOCK API FUNCTIONS
+// ==========================================
+
+// ----- Products -----
+async function getProducts(filters = {}) {
+    if (USE_MOCK_DATA) {
+        let results = [...mockProducts];
+        
+        // Mock filtering
+        if (filters.category) {
+            results = results.filter(p => p.category === filters.category);
+        }
+        if (filters.brand) {
+            results = results.filter(p => p.brand === filters.brand);
+        }
+        if (filters.search) {
+            const q = filters.search.toLowerCase();
+            results = results.filter(p => 
+                p.name.toLowerCase().includes(q) || 
+                p.description.toLowerCase().includes(q)
+            );
+        }
+        
+        return results;
+    } else {
+        // 🔗 SUPABASE CONNECTION (DISABLED)
+        // const supabase = createClient(...);
+        // let query = supabase.from('products').select('*');
+        // if (filters.category) query = query.eq('category', filters.category);
+        // if (filters.brand) query = query.eq('brand', filters.brand);
+        // const { data } = await query;
+        // return data;
+        
+        console.warn('🔗 Supabase not connected. Returning mock data.');
+        return mockProducts; // Fallback
+    }
+}
+async function getProductById(id) {
+    if (USE_MOCK_DATA) {
+        return mockProducts.find(p => p.id === id) || null;
+    } else {
+        // const { data } = await supabase.from('products').select('*').eq('id', id).single();
+        // return data;
+        return mockProducts.find(p => p.id === id) || null;
+    }
+}
+
+// ----- Sliders -----
+async function getSliders() {
+    if (USE_MOCK_DATA) {
+        return mockSliders;
+    } else {
+        // const { data } = await supabase.from('sliders').select('*').eq('is_active', true).order('sort_order');
+        // return data;
+        return mockSliders;
+    }
+}
+
+// ----- News -----
+async function getNews(limit = null) {
+    if (USE_MOCK_DATA) {
+        let results = [...mockNews];
+        if (limit) results = results.slice(0, limit);
+        return results;
+    } else {
+        // const { data } = await supabase.from('news').select('*').eq('is_published', true).order('published_date', { ascending: false }).limit(limit || 10);
+        // return data;
+        return mockNews.slice(0, limit || 10);
+    }
+}
+async function getNewsById(id) {
+    if (USE_MOCK_DATA) {
+        return mockNews.find(n => n.id === id) || null;
+    } else {
+        // const { data } = await supabase.from('news').select('*').eq('id', id).single();
+        // return data;
+        return mockNews.find(n => n.id === id) || null;
+    }
+}
+
+// ----- Testimonials -----
+async function getTestimonials() {
+    if (USE_MOCK_DATA) {
+        return mockTestimonials;
+    } else {
+        // const { data } = await supabase.from('testimonials').select('*').eq('is_approved', true);
+        // return data;
+        return mockTestimonials;
+    }
+}
+
+// ----- Gallery -----
+async function getGalleryItems(limit = null) {
+    if (USE_MOCK_DATA) {
+        let results = [...mockGallery];
+        if (limit) results = results.slice(0, limit);
+        return results;
+    } else {
+        // const { data } = await supabase.from('gallery_items').select('*').eq('is_published', true).order('sort_order').limit(limit || 20);
+        // return data;
+        return mockGallery.slice(0, limit || 20);
+    }
+}
+
+// ----- Settings -----
+async function getSettings() {
+    if (USE_MOCK_DATA) {
+        return mockSettings;
+    } else {
+        // const { data } = await supabase.from('site_settings').select('*').limit(1).single();
+        // return data;
+        return mockSettings;
+    }
+}
+
+// ----- Contact Form -----
+async function submitContact(formData) {
+    if (USE_MOCK_DATA) {
+        console.log('📨 Mock Contact Form Submission:', formData);
+        return { 
+            success: true, 
+            message: '✅ Thank you! Your message has been received. (MOCK MODE)' 
+        };
+    } else {
+        // const { data, error } = await supabase.from('contact_submissions').insert([formData]);
+        // if (error) throw error;
+        // return { success: true, data };
+        return { 
+            success: true, 
+            message: '✅ Thank you! Your message has been received.' 
+        };
+    }
+}
+
+// ----- Subscribe -----
+async function subscribeNewsletter(email) {
+    if (USE_MOCK_DATA) {
+        console.log('📧 Mock Newsletter Subscribe:', email);
+        return { success: true };
+    } else {
+        // const { data } = await supabase.from('subscribers').insert([{ email }]);
+        // return { success: true };
+        return { success: true };
+    }
+}
+
+// ----- Search -----
+async function searchSite(query) {
+    if (USE_MOCK_DATA) {
+        const q = query.toLowerCase();
+        const products = mockProducts.filter(p => 
+            p.name.toLowerCase().includes(q) || 
+            p.description.toLowerCase().includes(q)
+        );
+        const news = mockNews.filter(n => 
+            n.title.toLowerCase().includes(q) || 
+            n.excerpt.toLowerCase().includes(q)
+        );
+        return { products, news };
+    } else {
+        // Search in Supabase
+        // const { data: products } = await supabase.from('products').select('*').ilike('name', `%${query}%`);
+        // const { data: news } = await supabase.from('news').select('*').ilike('title', `%${query}%`);
+        // return { products, news };
+        return { products: [], news: [] };
+    }
+}
+
+// ==========================================
+// EXPORT TOGGLE FOR DEBUGGING
+// ==========================================
+const isMockMode = USE_MOCK_DATA;
+console.log(`🔧 API Mode: ${USE_MOCK_DATA ? 'MOCK' : 'LIVE (Supabase)'}`);
+// ===== main =====
+// ==========================================
+// MAIN APPLICATION - MERCANTILE OFFICE SYSTEMS
+// ==========================================
+
+// ---- DOM Ready ----
+document.addEventListener('DOMContentLoaded', async () => {
+    console.log('🏢 Mercantile Office Systems Loaded');
+    console.log(`🔧 Mode: ${isMockMode ? 'MOCK' : 'LIVE'}`);
+    
+    await initAll();
+});
+
+// ---- Initialize Everything ----
+async function initAll() {
+    await initSlider();
+    await initProducts();
+    await initNews();
+    await initTestimonials();
+    await initFooter();
+    await initHeader();
+    await initMobileMenu();
+    await initWhatsApp();
+    await initYear();
+    initBrandLogos();
+    initPlaceholderLinks();
+
+    // Catch any image that fails to load and swap in a clean placeholder
+    attachImageFallbacks(document);
+    
+    // Show mock mode banner (optional)
+    if (isMockMode) {
+        showMockBanner();
+    }
+}
+
+// ---- Mock Mode Banner ----
+function showMockBanner() {
+    const banner = document.createElement('div');
+    banner.style.cssText = `
+        position: fixed;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #d4a030;
+        color: #1a1a2e;
+        padding: 8px 20px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-weight: 600;
+        z-index: 9998;
+        box-shadow: 0 4px 20px rgba(212, 160, 48, 0.3);
+        letter-spacing: 0.5px;
+    `;
+    banner.textContent = '🔄 MOCK MODE - Static Data Only';
+    document.body.appendChild(banner);
+}
+
+// ---- Header ----
+async function initHeader() {
+    try {
+        const settings = await getSettings();
+        if (settings) {
+            // Update logo if needed
+            // document.querySelector('#site-logo').src = settings.logo_url || '/src/images/logo.svg';
+        }
+    } catch (error) {
+        console.error('Header error:', error);
+    }
+}
+
+// ---- Footer ----
+async function initFooter() {
+    try {
+        const settings = await getSettings();
+        if (settings) {
+            const address = document.querySelector('#footer-address');
+            const phone = document.querySelector('#footer-phone');
+            const email = document.querySelector('#footer-email');
+            
+            if (address) address.textContent = settings.address || 'Kathmandu, Nepal';
+            if (phone) phone.textContent = settings.phone || '+977-1-XXXXXXXX';
+            if (email) email.textContent = settings.email || 'info@mercantile.com.np';
+            
+            // Social links
+            const socialLinks = document.querySelector('#social-links');
+            if (socialLinks) {
+                const links = [];
+                if (settings.facebook_url) links.push({ icon: 'fab fa-facebook-f', url: settings.facebook_url });
+                if (settings.youtube_url) links.push({ icon: 'fab fa-youtube', url: settings.youtube_url });
+                if (settings.instagram_url) links.push({ icon: 'fab fa-instagram', url: settings.instagram_url });
+                if (settings.linkedin_url) links.push({ icon: 'fab fa-linkedin-in', url: settings.linkedin_url });
+                
+                socialLinks.innerHTML = links.map(l => `
+                    <a href="${l.url}" target="_blank" rel="noopener noreferrer">
+                        <i class="${l.icon}"></i>
+                    </a>
+                `).join('');
+            }
+        }
+    } catch (error) {
+        console.error('Footer error:', error);
+    }
+}
+
+// ---- Slider ----
+async function initSlider() {
+    const slides = await getSliders();
+    const track = document.querySelector('#slider-track');
+    const dots = document.querySelector('#slider-dots');
+    
+    if (!track || slides.length === 0) return;
+    
+    track.innerHTML = slides.map((slide, index) => `
+        <div class="slide" data-index="${index}">
+            <div class="slide-bg" style="background-image: url('${slide.image || placeholderSlide(slide.subtitle || '')}')"></div>
+            <div class="container">
+                <div class="slide-content">
+                    ${slide.title ? `<span class="slide-tag">${slide.title}</span>` : ''}
+                    <h1>${slide.subtitle || 'Welcome'}</h1>
+                    <p>${slide.description || ''}</p>
+                    <div class="btn-group">
+                        ${slide.button_url ? `
+                            <a href="${slide.button_url}" class="btn btn-primary">
+                                ${slide.button_text || 'Learn More'} <i class="fas fa-arrow-right"></i>
+                            </a>
+                        ` : ''}
+                    </div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    // Preload slide backgrounds with fallback to placeholder
+    slides.forEach((slide, index) => {
+        if (!slide.image) return;
+        const probe = new Image();
+        probe.onerror = () => {
+            const el = track.querySelector(`.slide[data-index="${index}"] .slide-bg`);
+            if (el) el.style.backgroundImage = `url('${placeholderSlide(slide.subtitle || '')}')`;
+        };
+        probe.src = slide.image;
+    });
+    
+    if (dots && slides.length > 1) {
+        dots.innerHTML = slides.map((_, index) => `
+            <span class="dot ${index === 0 ? 'active' : ''}" data-index="${index}"></span>
+        `).join('');
+    }
+    
+    initSliderControls(slides.length);
+}
+
+function initSliderControls(totalSlides) {
+    if (totalSlides <= 1) return;
+    
+    let currentIndex = 0;
+    const track = document.querySelector('#slider-track');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('#slider-prev');
+    const nextBtn = document.querySelector('#slider-next');
+    
+    function goToSlide(index) {
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+        currentIndex = index;
+        
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
+    }
+    
+    if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+    
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.index)));
+    });
+    
+    let autoSlide = setInterval(() => goToSlide(currentIndex + 1), 5000);
+    
+    const slider = document.querySelector('.hero-slider');
+    if (slider) {
+        slider.addEventListener('mouseenter', () => clearInterval(autoSlide));
+        slider.addEventListener('mouseleave', () => {
+            autoSlide = setInterval(() => goToSlide(currentIndex + 1), 5000);
+        });
+    }
+}
+
+// ---- Products ----
+async function initProducts() {
+    const container = document.querySelector('#products-grid');
+    if (!container) return;
+    
+    const products = await getProducts({});
+    const featured = products.slice(0, 4); // Show first 4
+    
+    if (featured.length === 0) {
+        container.innerHTML = '<p class="text-center">No products available.</p>';
+        return;
+    }
+    
+    container.innerHTML = featured.map(product => `
+        <div class="product-card">
+            <div class="product-image">
+                <img src="${product.image || placeholder(product.name)}" alt="${product.name}" loading="lazy">
+                ${product.brand === 'EPSON' ? '<span class="product-badge">EPSON</span>' : ''}
+                ${product.brand === 'Acer' ? '<span class="product-badge" style="background:#0066b3;color:#fff;">Acer</span>' : ''}
+            </div>
+            <div class="product-body">
+                <div class="product-brand">${product.brand}</div>
+                <h3>${product.name}</h3>
+                <div class="product-specs">${product.specs || product.description?.substring(0, 60) + '...' || ''}</div>
+                <div class="product-price">${product.price}</div>
+                <a href="#" class="product-link">
+                    View Details <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    `).join('');
+
+    attachImageFallbacks(container);
+}
+
+// ---- News ----
+async function initNews() {
+    const container = document.querySelector('#news-grid');
+    if (!container) return;
+    
+    const news = await getNews(3);
+    
+    if (news.length === 0) {
+        container.innerHTML = '<p class="text-center">No news available.</p>';
+        return;
+    }
+    
+    container.innerHTML = news.map(item => `
+        <div class="news-card">
+            <div class="news-image">
+                <img src="${item.image || placeholder(item.category || 'News')}" alt="${item.title}" loading="lazy">
+            </div>
+            <div class="news-body">
+                <div class="news-meta">
+                    <span class="category">${item.category || 'News'}</span>
+                    <span>${item.date ? new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : ''}</span>
+                </div>
+                <h3>${item.title}</h3>
+                <p>${item.excerpt || ''}</p>
+                <a href="#" class="read-more">
+                    Read More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    `).join('');
+
+    attachImageFallbacks(container);
+}
+
+// ---- Testimonials ----
+async function initTestimonials() {
+    // Simple display - can be enhanced later
+    const testimonials = await getTestimonials();
+    console.log('📝 Testimonials loaded:', testimonials.length);
+}
+
+// ---- Mobile Menu ----
+function initMobileMenu() {
+    const toggle = document.querySelector('#mobile-toggle');
+    const nav = document.querySelector('#main-nav');
+    
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            nav.classList.toggle('mobile-open');
+            document.body.classList.toggle('menu-open');
+        });
+        
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                toggle.classList.remove('active');
+                nav.classList.remove('mobile-open');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    }
+}
+
+// ---- WhatsApp ----
+async function initWhatsApp() {
+    try {
+        const settings = await getSettings();
+        const link = document.querySelector('#whatsapp-link');
+        const cta = document.querySelector('#whatsapp-cta');
+        const number = settings?.whatsapp_number?.replace(/[^0-9]/g, '') || '9779851234567';
+        const url = `https://wa.me/${number}`;
+        
+        if (link) link.href = url;
+        if (cta) cta.href = url;
+    } catch (error) {
+        console.error('WhatsApp error:', error);
+    }
+}
+
+// ---- Current Year ----
+function initYear() {
+    const yearSpan = document.querySelector('#current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+}
+
+// ---- Brand & About Logos (replace missing image files) ----
+function initBrandLogos() {
+    const epson = document.querySelector('.brand-card.epson .brand-logo');
+    const acer = document.querySelector('.brand-card.acer .brand-logo');
+    if (epson) epson.src = brandLogo('EPSON');
+    if (acer) acer.src = brandLogo('Acer');
+
+    const about = document.querySelector('.about-image img');
+    if (about) {
+        about.addEventListener('error', () => {
+            about.src = placeholder('Our Showroom');
+        }, { once: true });
+        // Trigger fallback immediately if the source is missing
+        if (about.complete && about.naturalWidth === 0) {
+            about.src = placeholder('Our Showroom');
+        }
+    }
+}
+
+// ---- Placeholder Page Links (single-page demo) ----
+function initPlaceholderLinks() {
+    const links = document.querySelectorAll('a[data-page]');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            showToast('This page is part of the full site — coming after approval.');
+        });
+    });
+}
+
+// ---- Lightweight Toast ----
+let toastTimer = null;
+function showToast(message) {
+    let toast = document.querySelector('#demo-toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'demo-toast';
+        toast.style.cssText = `
+            position: fixed; bottom: 150px; left: 50%; transform: translateX(-50%);
+            background: #1a3a6b; color: #fff; padding: 12px 24px; border-radius: 50px;
+            font-size: 14px; font-weight: 500; z-index: 9999; box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            opacity: 0; transition: opacity 0.3s ease; max-width: 90%; text-align: center;
+        `;
+        document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    requestAnimationFrame(() => { toast.style.opacity = '1'; });
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { toast.style.opacity = '0'; }, 2600);
+}
+
+// ---- Sticky Header ----
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('#main-header');
+    if (header) {
+        header.classList.toggle('scrolled', window.scrollY > 50);
+    }
+});
+
+// ---- Export for debugging ----
+
+</script>
+</body>
+</html>

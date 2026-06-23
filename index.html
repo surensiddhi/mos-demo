@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercantile Office Systems - EPSON | Acer</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Mercantile Office Systems - Authorized Dealer for EPSON Printers and Acer Laptops in Nepal.">
+    <meta name="keywords" content="EPSON, Acer, Printers, Laptops, Office Systems, Nepal">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mercantile Office Systems - EPSON | Acer">
+    <meta property="og:description" content="Authorized Dealer for EPSON Printers and Acer Laptops">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- HEADER -->
+    <!-- ========================================== -->
+    <header id="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./src/images/logo.svg" alt="Mercantile Office Systems" id="site-logo">
+                    </a>
+                </div>
+                
+                <nav class="main-nav" id="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-page="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-page="products.html?category=Printer">EPSON Printers</a></li>
+                                <li><a href="#" data-page="products.html?category=Laptop">Acer Laptops</a></li>
+                                <li><a href="#" data-page="products.html?category=Accessory">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" data-page="about.html">About</a></li>
+                        <li><a href="#" data-page="gallery.html">Gallery</a></li>
+                        <li><a href="#" data-page="news.html">News</a></li>
+                        <li><a href="#" data-page="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="#" data-page="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fas fa-phone"></i> Get Quote
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobile-toggle">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================================== -->
+    <main>
+        <!-- Hero Slider -->
+        <section class="hero-slider" id="hero-slider">
+            <div class="slider-container">
+                <div class="slider-track" id="slider-track"></div>
+                
+                <button class="slider-btn prev" id="slider-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next" id="slider-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="slider-dots" id="slider-dots"></div>
+            </div>
+        </section>
+
+        <!-- Brand Showcase -->
+        <section class="brand-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Brands</span>
+                    <h2 class="section-title">Trusted <span>Partners</span></h2>
+                </div>
+                
+                <div class="brand-grid">
+                    <div class="brand-card epson">
+                        <img src="./src/images/logo.svg" alt="EPSON" class="brand-logo">
+                        <h3>EPSON Printers</h3>
+                        <p>Premium quality printing solutions for home and office</p>
+                        <a href="#" data-page="products.html?category=Printer" class="brand-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="brand-card acer">
+                        <img src="./src/images/logo.svg" alt="Acer" class="brand-logo">
+                        <h3>Acer Laptops</h3>
+                        <p>Powerful performance for work, study, and gaming</p>
+                        <a href="#" data-page="products.html?category=Laptop" class="brand-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Preview -->
+        <section class="products-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Featured Products</span>
+                    <h2 class="section-title">Best <span>Sellers</span></h2>
+                    <p class="section-subtitle">Discover our most popular EPSON printers and Acer laptops</p>
+                </div>
+                
+                <div class="products-grid" id="products-grid"></div>
+                
+                <div class="section-footer">
+                    <a href="#" data-page="products.html" class="btn btn-outline-primary">
+                        View All Products <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="about-section section-padding">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-content">
+                        <span class="section-tag">About Us</span>
+                        <h2 class="section-title">Mercantile Office <span>Systems</span></h2>
+                        <p>
+                            Since 1995, Mercantile Office Systems (P) Ltd. has been Nepal's trusted partner for 
+                            office technology solutions. As an authorized dealer for <strong>EPSON</strong> and 
+                            <strong>Acer</strong>, we deliver quality products backed by exceptional service.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Authorized Dealer</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>30+ Years Experience</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Genuine Products</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expert Support</span>
+                            </div>
+                        </div>
+                        <a href="#" data-page="about.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="./src/images/about-showroom.jpg" alt="Mercantile Showroom" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Preview -->
+        <section class="news-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Latest Updates</span>
+                    <h2 class="section-title">News & <span>Events</span></h2>
+                </div>
+                
+                <div class="news-grid" id="news-grid"></div>
+                
+                <div class="section-footer">
+                    <a href="#" data-page="news.html" class="btn btn-outline-primary">
+                        View All News <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="cta-content">
+                        <h2>Looking for the Perfect Office Solution?</h2>
+                        <p>Get expert advice and the best prices on EPSON printers and Acer laptops</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#" data-page="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg" id="whatsapp-cta">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- FOOTER -->
+    <!-- ========================================== -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="./src/images/logo-white.svg" alt="Mercantile" class="footer-logo">
+                    <p>Mercantile Office Systems (P) Ltd. — Your trusted partner for EPSON printers and Acer laptops in Nepal.</p>
+                    <div class="social-links" id="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="products.html">Products</a></li>
+                        <li><a href="#" data-page="about.html">About</a></li>
+                        <li><a href="#" data-page="gallery.html">Gallery</a></li>
+                        <li><a href="#" data-page="news.html">News</a></li>
+                        <li><a href="#" data-page="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-page="products.html?category=Printer">EPSON Printers</a></li>
+                        <li><a href="#" data-page="products.html?category=Laptop">Acer Laptops</a></li>
+                        <li><a href="#" data-page="products.html?category=Accessory">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <span id="footer-address">Kathmandu, Nepal</span></p>
+                        <p><i class="fas fa-phone"></i> <span id="footer-phone">+977-1-XXXXXXXX</span></p>
+                        <p><i class="fas fa-envelope"></i> <span id="footer-email">info@mercantile.com.np</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Mercantile Office Systems (P) Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- WHATSAPP WIDGET -->
+    <!-- ========================================== -->
+    <div class="whatsapp-widget">
+        <a href="#" id="whatsapp-link" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-label">Chat with us</span>
+        </a>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS -->
+    <!-- ========================================== -->
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+/* ========================================== */
+/* MERCANTILE OFFICE SYSTEMS - RESPONSIVE    */
+/* ========================================== */
+
+/* ---------- Tablets ---------- */
+@media (max-width: 1024px) {
+    .hero-slider {
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .slide-content h1 {
+        font-size: 40px;
+    }
+    
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-image img {
+        height: 280px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+    /* Header */
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 360px;
+        height: 100vh;
+        background: var(--white);
+        padding: 80px 32px 32px;
+        transition: var(--transition);
+        box-shadow: -4px 0 40px rgba(0,0,0,0.08);
+        overflow-y: auto;
+    }
+    
+    .main-nav.mobile-open {
+        right: 0;
+    }
+    
+    .main-nav .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+    }
+    
+    .main-nav .nav-list > li > a {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        padding-left: 16px;
+        border-left: 2px solid var(--secondary);
+        display: none;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        transform: none;
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+    
+    /* Hero */
+    .hero-slider {
+        height: 70vh;
+        min-height: 380px;
+        margin-top: 64px;
+    }
+    
+    .slide-content {
+        padding: 20px;
+    }
+    
+    .slide-content h1 {
+        font-size: 30px;
+    }
+    
+    .slide-content p {
+        font-size: 15px;
+    }
+    
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .slider-btn.prev { left: 12px; }
+    .slider-btn.next { right: 12px; }
+    
+    /* Brand Section */
+    .brand-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .brand-card {
+        padding: 28px 24px;
+    }
+    
+    /* Products */
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 16px;
+    }
+    
+    .product-card .product-image {
+        height: 150px;
+    }
+    
+    .product-card .product-body {
+        padding: 14px 16px 18px;
+    }
+    
+    .product-card h3 {
+        font-size: 15px;
+    }
+    
+    .product-card .product-price {
+        font-size: 17px;
+    }
+    
+    /* News */
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* About */
+    .about-features {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* CTA */
+    .cta-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cta-content h2 {
+        font-size: 24px;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    
+    /* Section Padding */
+    .section-padding {
+        padding: 48px 0;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+    
+    .section-subtitle {
+        font-size: 15px;
+    }
+    
+    /* WhatsApp */
+    .whatsapp-widget .whatsapp-label {
+        display: none;
+    }
+    
+    .whatsapp-widget a {
+        padding: 14px;
+        border-radius: 50%;
+    }
+    
+    .whatsapp-widget a i {
+        font-size: 32px;
+    }
+}
+
+/* ---------- Small Mobile ---------- */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero-slider {
+        height: 60vh;
+        min-height: 320px;
+    }
+    
+    .slide-content h1 {
+        font-size: 24px;
+    }
+    
+    .slide-content .slide-tag {
+        font-size: 11px;
+        padding: 4px 14px;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .product-card .product-image {
+        height: 120px;
+    }
+    
+    .product-card .product-body {
+        padding: 10px 12px 14px;
+    }
+    
+    .product-card h3 {
+        font-size: 13px;
+    }
+    
+    .product-card .product-specs {
+        font-size: 11px;
+    }
+    
+    .product-card .product-price {
+        font-size: 15px;
+    }
+    
+    .product-card .product-link {
+        font-size: 12px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .btn-lg {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+}
